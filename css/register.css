@@ -1,0 +1,42 @@
+:root{
+   --ancho: 100%;
+}
+#registro{
+	width: 60%;
+    height: 400px;
+    background-color: #8be4d5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color:#01a287
+}
+#registro h2{
+	 text-align: center;
+}
+
+.cajastexto{
+	width: 98%;
+	left: 0;
+	height: 25px;
+	border: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.boton{
+	width: 50%;
+	left: 25%;
+	height: 40px;
+	background-color: #182153;
+	color: #ffffff;
+	border: 0;
+	margin-left: 25%;
+  margin-right: auto;
+}
+.boton:hover{
+	background-color: #9ba9c3;
+	color: black;
+}
