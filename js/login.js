@@ -21,8 +21,10 @@ function loginFunc(e)
     .catch(error => console.error('Error:', error))
     .then(response => console.log('Success:', response));
     //var mostrar = document.getElementById('mostrar');
-  }
-  document.getElementById("ingresar").onclick = function () {
+}
+
+
+document.getElementById("ingresar").onclick = function () {
 
 
     var username = document.getElementById('user').value;
@@ -54,3 +56,4 @@ function loginFunc(e)
                       }
          );
   }
+  
