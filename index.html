@@ -18,44 +18,16 @@
     <label for="Password:">Contraseña</label><br>
     <input type="text" id="password" name="password" class="texto"> <br><br>  
     </label>
-   
-<button id="logear" onclick="loadDoc()" class="boton">Logear</button><br>
+    <input type="button" value="Ingresar" id="ingresar">
+
 </form>
 <div class="registro">
-<a href="register.html">Register</a>
+<a href="register.html">Registrar</a>
 </div><br><br>
 </div>
+ 
+<script type="text/javascript" src="js/login.js"></script>
 
-
-<script>
-function loadDoc() {
-  let url = "https://ServidorTest.carlos-reneren7.repl.co/login"
-  let formData = new FormData();
-  let vuser = document.getElementById("user").value;
-  let vpassword = document.getElementById("password").value;
-
-  //alert (vuser+":"+vpassword);
-  formData.append("user", vuser);
-  formData.append("password", vpassword);
-   
-  const xhttp = new XMLHttpRequest();
-
-  xhttp.onreadystatechange = function() {
-    //console.log(this.responseText);
-    if (this.readyState == 4 && this.status == 200) {
-        //console.log(this.status);
-        localStorage.setItem('user', vuser);
-        window.location.href = "dashboard.html";
-    }else{
-        console.log("error..");
-    }
-  };
-
-  xhttp.open("POST", url);
-  xhttp.send(formData);
-}
-
-</script>
 
 </body>
 </html>
