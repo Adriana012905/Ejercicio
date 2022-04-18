@@ -1,4 +1,4 @@
-document.getElementById("registrar").onclick = function () {
+document.getElementById("registrar").onclick = function (){
 
 
 var username = document.getElementById('user').value;

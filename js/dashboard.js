@@ -6,7 +6,7 @@ if(localStorage.getItem("user")==null) {
 var data = localStorage.getItem('name');
 document.getElementById('name').innerHTML = data;
 
-document.getElementById("cerrar").onclick = function() {
+document.getElementById("cerrar").onclick = function(){
   localStorage.removeItem('name');
   localStorage.removeItem('user');
 
